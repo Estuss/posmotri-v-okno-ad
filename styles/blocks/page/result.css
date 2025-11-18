@@ -1,0 +1,143 @@
+.result__video-container {
+  height: 386px;
+}
+
+.result__video {
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.search-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  margin-top: 16px;
+}
+
+.search-form__fieldset {
+  border: none;
+}
+
+/* Заголовок */
+
+.search-form__fieldset-title {
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  font-style: normal;
+  line-height: 22px;
+}
+
+/* Поиск */
+
+.search-form__textfield {
+  width: 225px;
+  margin-top: 5px;
+  border-top: 1px solid #fff;
+  border-right: 1px solid transparent;
+  border-bottom: 1px solid #fff;
+  border-left: 1px solid transparent;
+  color: #fff;
+  font-family: inherit;
+  font-size: inherit;
+  background-color: transparent;
+  appearance: none;
+  padding: 0;
+}
+
+.search-form__textfield::placeholder {
+  margin-left: 0;
+  color: rgba(255, 255, 255 / 0.7);
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  font-style: normal;
+  line-height: 22px;
+}
+
+.search-form__textfield:active {
+  border-right: 1px solid #fff;
+  border-left: 1px solid #fff;
+}         
+
+/* чекбоксы */
+
+.search-form__checkbox-list {
+  display: flex;
+  gap: 15px;
+  padding-top: 8px;
+
+  align-items: center; /* Вместо center или start */
+  line-height: 1;
+}
+
+.search-form__pseudo-checkbox {
+  position: relative;
+  z-index: -1;
+  display: inline-block;
+  width: 19px;
+  height: 19px;
+  margin-right: 5px;
+  border: 1px solid #fff;
+  vertical-align: middle;
+}
+
+.search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
+  content: ''; 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 15px; /* Размер внутреннего квадрата */
+  height: 15px;
+  background-color: #fff;
+  transform: translate(-50%, -50%);
+}
+
+
+.search-form__textfield:focus {
+  outline: none;
+}
+
+.search-form__label:hover {
+  cursor: pointer;
+}
+
+.search-form__label:has(:focus-visible) {
+  outline: 1px solid #fff;
+  outline-offset: 1px;
+}
+
+
+.search-form__label:hover  .search-form__label-text {
+  text-decoration: underline;
+  text-underline-offset: 0.1em;
+  text-decoration-skip-ink: none;
+}
+
+
+/* Кнопки */
+
+.button {
+  align-self: end;
+  width: 194px;
+  height: 34px;
+  border: 1px solid #fff;
+  color: #fff;
+  background-color: transparent;
+}
+
+.button:active {
+  background-color: #545050;
+}
+
+.button:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.button:focus-visible {
+  outline: 1px solid #fff;  
+  outline-offset: 1px;
+}

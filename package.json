@@ -1,0 +1,29 @@
+{
+  "name": "posmotri-v-okno-ad",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/Estuss/posmotri-v-okno-ad#readme",
+  "bugs": {
+    "url": "https://github.com/Estuss/posmotri-v-okno-ad/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Estuss/posmotri-v-okno-ad.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "check": "prettier --check './**/*.{html,css,js}'",
+    "format": "prettier --write './**/*.{html,css,js}'",
+    "lint": "stylelint '**/*.css'",
+    "lintfix":"stylelint '**/*.css' --fix",
+    "checkAll":"npm run check && npm run lint",
+    "fixAll":"npm run format && npm run lintfix"
+  },
+  "dependencies": {
+    "prettier": "^3.6.2",
+    "stylelint": "^16.25.0"
+  }
+}
