@@ -11,7 +11,7 @@
 
 .content__list {
   overflow-x: hidden;
-  display: flex;
+  display: flex;  
   flex-direction: column;
   gap: 30px;
 }
@@ -47,6 +47,7 @@
 .content__card-link {
   color: #fff;
   text-decoration: none;
+  display: block;
 }
 
 .content__video-card-description-container {
@@ -95,7 +96,9 @@
   text-decoration-skip-ink: none;
 }
 
-
 .content__card-link:focus-visible {
-  outline: 2px solid #fff;  
+  outline: 1px solid #fff;
+  outline-offset: -1px;
 }
+
+
