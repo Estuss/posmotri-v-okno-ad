@@ -65,11 +65,11 @@
   text-transform: uppercase;
   margin-bottom: 6px;
   
-  /* Cвойства для обрезки текста */
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  width: 100%; /* Важно для работы text-overflow */
+  
+  white-space: nowrap; /* Запрещает перенос текста на новую строку */
+  overflow: hidden; /*Скрывает содержимое, выходящее за границы контейнера*/
+  text-overflow: ellipsis; /* Добавляет многоточие (...) в месте обрезки текста */
+  width: 100%; /* Важно для работы text-overflow, гарантирует, что элемент занимает всю доступную ширину */
 }
 
 .content__video-card-description {
@@ -84,7 +84,6 @@
   width: 100%;
   margin-top: 30px;
 }
-
 
 .content__list-item:active {
   background-color: #545050;
